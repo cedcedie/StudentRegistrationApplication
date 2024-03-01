@@ -43,6 +43,8 @@
             this.middleName = new System.Windows.Forms.Label();
             this.gender = new System.Windows.Forms.Label();
             this.dateOfBirth = new System.Windows.Forms.Label();
+            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // textBox1
@@ -104,24 +106,24 @@
             // 
             this.comboBox1.Font = new System.Drawing.Font("Helvetica", 12F);
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(245, 212);
+            this.comboBox1.Location = new System.Drawing.Point(162, 212);
             this.comboBox1.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(59, 27);
             this.comboBox1.TabIndex = 5;
-            this.comboBox1.Text = "Year";
+            this.comboBox1.Text = "Day";
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // comboBox2
             // 
             this.comboBox2.Font = new System.Drawing.Font("Helvetica", 12F);
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(162, 212);
+            this.comboBox2.Location = new System.Drawing.Point(231, 212);
             this.comboBox2.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(73, 27);
             this.comboBox2.TabIndex = 6;
-            this.comboBox2.Text = "Day";
+            this.comboBox2.Text = "Year";
             // 
             // comboBox3
             // 
@@ -141,7 +143,7 @@
             this.registerStudent.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.registerStudent.Font = new System.Drawing.Font("Helvetica", 12F);
             this.registerStudent.ForeColor = System.Drawing.Color.White;
-            this.registerStudent.Location = new System.Drawing.Point(114, 301);
+            this.registerStudent.Location = new System.Drawing.Point(109, 349);
             this.registerStudent.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.registerStudent.Name = "registerStudent";
             this.registerStudent.Size = new System.Drawing.Size(157, 30);
@@ -214,12 +216,34 @@
             this.dateOfBirth.TabIndex = 14;
             this.dateOfBirth.Text = "Date Of Birth *";
             // 
+            // comboBox4
+            // 
+            this.comboBox4.Font = new System.Drawing.Font("Helvetica", 12F);
+            this.comboBox4.FormattingEnabled = true;
+            this.comboBox4.Location = new System.Drawing.Point(12, 315);
+            this.comboBox4.Name = "comboBox4";
+            this.comboBox4.Size = new System.Drawing.Size(356, 27);
+            this.comboBox4.TabIndex = 15;
+            this.comboBox4.Text = "Select Program";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(105, 293);
+            this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(166, 19);
+            this.label1.TabIndex = 16;
+            this.label1.Text = "Programs To Apply *";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightGray;
-            this.ClientSize = new System.Drawing.Size(380, 349);
+            this.ClientSize = new System.Drawing.Size(373, 399);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.comboBox4);
             this.Controls.Add(this.dateOfBirth);
             this.Controls.Add(this.gender);
             this.Controls.Add(this.middleName);
@@ -262,6 +286,8 @@
         private System.Windows.Forms.Label middleName;
         private System.Windows.Forms.Label gender;
         private System.Windows.Forms.Label dateOfBirth;
+        private System.Windows.Forms.ComboBox comboBox4;
+        private System.Windows.Forms.Label label1;
     }
 }
 
